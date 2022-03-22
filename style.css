@@ -627,7 +627,7 @@ section .title::after{
   background: crimson;
   border: 2px solid crimson;
   transition: all 0.3s ease;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .right form .button-area button:hover{
   color: crimson;
