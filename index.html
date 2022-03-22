@@ -226,24 +226,30 @@
                     <form action="POST" data-netlify="True">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" name="message" id="message" rows="10" placeholder="Message.." required></textarea>
                         </div>
-                        <div 
+                        <div class="field">
+                            <div 
                             data-netlify-recaptcha="true">
                         </div>
-                        <div class="button-area">
-                            <button type="submit" onclick="sendmsg()">Send message</button>
                         </div>
+                        <div class="field">
+                            <div class="button-area">
+                                <input type="submit" value="Send message">
+                            </div>
+                        </div>
+                        
+
                     </form>
                 </div>
             </div>

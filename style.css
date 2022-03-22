@@ -613,7 +613,7 @@ section .title::after{
   display: flex;
   align-items: center;
 }
-.right form .button-area button{
+.right form .button-area input{
   color: #fff;
   display: block;
   width: 160px!important;
@@ -628,7 +628,7 @@ section .title::after{
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.right form .button-area button:hover{
+.right form .button-area input:hover{
   color: crimson;
   background: none;
 }
