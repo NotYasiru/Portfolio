@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+:root {
+    --color-primary: #111;
+    --color-secondary: #0044ff;
+    --color-white: #ffffff;
+    --color-black: #000;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -85,29 +93,33 @@ html{
   .wrapper .facebook:hover span,
   .wrapper .facebook:hover .tooltip,
   .wrapper .facebook:hover .tooltip:before{
-    background: #3B5999;
+    background: var(--color-secondary);
   }
   .wrapper .twitter:hover span,
   .wrapper .twitter:hover .tooltip,
   .wrapper .twitter:hover .tooltip:before{
-    background: #46C1F6;
+    background: var(--color-secondary);
   }
   .wrapper .instagram:hover span,
   .wrapper .instagram:hover .tooltip,
   .wrapper .instagram:hover .tooltip:before{
-    background: #e1306c;
+    background: var(--color-secondary);
   }
   .wrapper .discord:hover span,
   .wrapper .discord:hover .tooltip,
   .wrapper .discord:hover .tooltip:before{
-    background: #333;
+    background: var(--color-secondary);
   }
   .wrapper .youtube:hover span,
   .wrapper .youtube:hover .tooltip,
   .wrapper .youtube:hover .tooltip:before{
-    background: #DE463B;
+    background: var(--color-secondary);
   }
-
+  .wrapper .github:hover span,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip:before{
+    background: var(--color-secondary);
+  }
 .social_media_icons{
     text-align: center;
 }
@@ -175,7 +187,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: var(--color-secondary);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -191,7 +203,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: var(--color-secondary);
 }
 .navbar .max-width{
     display: flex;
@@ -204,7 +216,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: var(--color-secondary);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -223,7 +235,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: var(--color-secondary);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -241,7 +253,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: var(--color-secondary);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -267,14 +279,20 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("./images/black-diamond-background-hd.jpg") no-repeat center;
+    /* background-color: #111; */
+    background: url("./images/background.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+/* .top-image{
+    position: absolute;
+    left: auto;
+    right: 10rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
 .home .max-width{
   width: 100%;
   display: flex;
@@ -295,23 +313,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: var(--color-secondary);
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: var(--color-secondary);
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--color-secondary);
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: var(--color-secondary);
     background: none;
 }
 /* about section styling */
@@ -325,7 +343,13 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 6px; 
+    transition: all 0.3s ease;
+}
+.about .about-content .left img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--color-primary);
 }
 .about .about-content .right{
     width: 55%;
@@ -336,25 +360,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: var(--color-secondary);
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: var(--color-secondary);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--color-secondary);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: var(--color-secondary);
     background: none;
 }
 /* services section styling */
@@ -381,7 +405,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: var(--color-secondary);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -391,7 +415,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: var(--color-secondary);
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -419,18 +443,18 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: var(--color-secondary);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--color-secondary);
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: var(--color-secondary);
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -458,7 +482,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: var(--color-secondary);
 }
 .skills-content .right .html::before{
     width: 85%;
@@ -467,13 +491,16 @@ section .title::after{
     width: 65%;
 }
 .skills-content .right .js::before{
-    width: 60%;
+    width: 45%;
+}
+.skills-content .right .python::before{
+    width: 75%;
 }
 .skills-content .right .php::before{
-    width: 30%;
+    width: 35%;
 }
-.skills-content .right .mysql::before{
-    width: 55%;
+.skills-content .right .csharp::before{
+    width: 40%;
 }
 /* teams section styling */
 /* .teams .title::after{
@@ -488,7 +515,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background: var(--color-secondary);
 }
 .teams .carousel .card .box{
     display: flex;
@@ -510,12 +537,137 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid var(--color-secondary);
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
 } */
+
+/* portfolio section styles */
+.portfolio{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.portfolio .title::before{
+    background: #fff;
+}
+.portfolio .title::after{
+    background: #111;
+    content: "my projects";
+}
+.port-text {
+    padding: 2rem 0;
+    text-align: center;
+}
+  
+.portfolios {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+  
+.portfolios .portfolio-item {
+  position: relative;
+  border-radius: 15px;
+}
+
+.portfolios .portfolio-item img {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.portfolios .portfolio-item .hover-items {
+  width: 85%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon i {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin: 0 1rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -526,7 +678,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid var(--color-secondary)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -535,7 +687,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: var(--color-secondary)!important;
 }
 /* contact section styling */
 .contact .title::after{
@@ -565,7 +717,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: var(--color-secondary);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -624,13 +776,13 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
   transition: all 0.3s ease;
   margin-top: 25px;
 }
 .right form .button-area button:hover{
-  color: crimson;
+  color: var(--color-secondary);
   background: none;
 }
 /* footer section styling */
@@ -641,7 +793,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: var(--color-secondary);
     text-decoration: none;
 }
 footer span a:hover{
@@ -678,11 +830,23 @@ footer span a:hover{
     }
     .mobile-social{
         display: block;
-        z-index: 999;
+        display: grid;
+        grid-column: 1 / 3;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row: inherit;
+        grid-gap: 50px;
     }
     .mobile-social .active:before{
         content: "\f00d";
     }
+    .mobile-social .icons{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .mobile-social .icons a i{
+        font-size: 2rem;
+    }
+
     .navbar .menu{
         position: fixed;
         height: 100vh;
@@ -801,4 +965,26 @@ footer span a:hover{
         align-items: left;
     }
 }
+@media screen and (max-width: 600px) {
 
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width:1250px){
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width:660px){
+    
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
