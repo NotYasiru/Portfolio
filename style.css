@@ -20,7 +20,9 @@ html{
 }
 
 
-
+.gSCO{
+    display: none;
+}
 
 .wrapper{
     display: inline-flex;
