@@ -336,7 +336,7 @@ section .title::after{
 }
 /* about section styling */
 .about .title::after{
-    content: "who am i";
+    content: "Who am I";
 }
 .about .about-content .left{
     width: 45%;
@@ -395,7 +395,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i do";
+    content: "What I Do";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -430,7 +430,7 @@ section .title::after{
 }
 /* skills section styling */
 .skills .title::after{
-    content: "what i know";
+    content: "What I Know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -556,7 +556,7 @@ section .title::after{
 }
 .portfolio .title::after{
     background: #111;
-    content: "my projects";
+    content: "My Projects";
 }
 .port-text {
     padding: 2rem 0;
@@ -694,7 +694,7 @@ section .title::after{
 }
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Get in Touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
