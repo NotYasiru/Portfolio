@@ -809,6 +809,13 @@ footer span a:hover{
     font-size:20px;
     display: none;
 }
+.mobile-social .icons a i{
+    color: var(--color-secondary);
+    transition: color 0.3s ease;
+}
+.mobile-social .icons a i:hover{
+    color: var(--color-black);
+}
 
 
 /* responsive media query start */
@@ -872,6 +879,9 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+    .home{
+        background: var(--color-primary);
+    }
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -914,6 +924,9 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
+    .home{
+        background: var(--color-primary);
+    }
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -933,6 +946,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
+    .home{
+        background: var(--color-primary);
+    }
  
     .home .home-content .text-2{
         font-size: 50px;
