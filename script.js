@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -66,7 +65,6 @@ $(document).ready(function(){
         }
     });
 });
-=======
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -134,4 +132,3 @@ $(document).ready(function(){
         }
     });
 });
->>>>>>> 7154f241fc4a4ac27b21ad4071f5f20632321eb2
